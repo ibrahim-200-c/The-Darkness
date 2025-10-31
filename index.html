@@ -1,101 +1,159 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <title>The Conjuring Universe Gallery</title>
-    <style>
-        body {
-            background-image: url('https://preview.redd.it/q42nkfurirq21.jpg?width=1080&crop=smart&auto=webp&s=11b6a6b7b29be428bfd07246518aa3f55f2e6729');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-            font-family: 'Playfair Display', 'Baskerville', 'Georgia', serif;
-            text-align: center;
-            color: white;
-        }
-        h2 {
-            margin-top: 30px;
-            font-size: 20px;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 60px;
-            margin: 40px 0;
-        }
-        .gallery img {
-            width: 400px;
-            height: 600px;
-            border-radius: 3%;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-        {
-            text-decoration: none;
-        }
-        .navbar{
-            background: rgb(26, 0, 5); font-family: calibri;  padding-right: 15px; padding-left: 15px;
-            
-            height: 105px;
-            
-        }
-        .navdiv{
-            display: flex; align-items: center; justify-content:space-between;
-        }
-        .logo a{
-            font-size: 40px; font-weight: 600; color: white; 
-        }
-        li{
-            list-style: none; display: inline-block;
-        }
-        li a{
-            color: black; font-size: 15px; font-weight: bold; margin-right: 25px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Conjuring Universe Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url('https://preview.redd.it/q42nkfurirq21.jpg?width=1080&crop=smart&auto=webp&s=11b6a6b7b29be428bfd07246518aa3f55f2e6729') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(6px);
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo a {
+      font-size: 36px;
+      color: crimson;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 15px;
+      padding: 8px 15px;
+      border: 2px solid crimson;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: crimson;
+      color: #fff;
+    }
+
+    /* Header */
+    h2 {
+      margin-top: 40px;
+      font-size: 26px;
+      text-shadow: 0 0 15px #000;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 50px 40px;
+    }
+
+    .gallery a img {
+      width: 100%;
+      height: 420px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery a img:hover {
+      transform: scale(1.06);
+      box-shadow: 0 6px 25px rgba(255, 0, 0, 0.5);
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 14px;
+      color: #ccc;
+      text-shadow: 0 0 3px #000;
+    }
+
+    /* Audio */
+    audio {
+      margin: 30px 0;
+      filter: drop-shadow(0 0 8px crimson);
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-<div class="navdiv">
+
+  <nav class="navbar">
     <div class="logo"><a href="#">EINBRAINTON</a></div>
-<ul>
-    <li>
-        <button ><a href="#">Home</a></button>
-        <button ><a href="tel: 01792108310">Contact</a></button>
-    </li>
-</ul>
-</div>
-
-    </nav>
-
-    <h2>THE WHOLE CONJURING UNIVERSE<br>Feel the Darkness...</h2>
-
-    <div class="gallery">
-       <a href="https://drive.google.com/file/d/1ityUm5DF6dstdIeNAI5d0KsKPV6oEwSW/view"> <img src="https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_.jpg" alt="Movie 1"></a>
-       <a href="https://drive.google.com/file/d/12paeBGyZW635xIYce0R7nMaFPxqkW5--/view?usp=drive_link"><img src="https://m.media-amazon.com/images/M/MV5BNjkyMDU5ZWQtZDhkOC00ZWFjLWIyM2MtZWFhMDUzNjdlNzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Movie 2"></a>
-        <a href="https://drive.google.com/file/d/1EtvIOLh9g4OEDcqr6E-lTaFNpPtaEZ__/view?usp=drive_link"><img src="https://m.media-amazon.com/images/M/MV5BOTRkMDlmZWEtMzQyYy00YzgyLTgwM2QtNzgxYmIwNGVlYmJlXkEyXkFqcGc@._V1_.jpg" alt="Movie 3"></a>
-        <a href="https://drive.google.com/file/d/1b_c1IUJvhe5peBftGcLl2IC3QiixfNO3/view?usp=drive_link"><img src="https://play-lh.googleusercontent.com/BAxyWqRWBzJT7kW6kR7qgw2946MzJbOKm78_71qyEi_4_VIHvkU28uiDOz8U3lvuexiF" alt="Movie 4"></a>
-        <a href="https://drive.google.com/file/d/1ViBBltUJFVIRyVsJcPOEkDalxDNqm1uU/view?usp=drive_link"><img src="https://m.media-amazon.com/images/M/MV5BMjM3NzQ5NDcxOF5BMl5BanBnXkFtZTgwNzM4MTQ5NTM@._V1_.jpg" alt="Movie 5"></a>
-        <a href="https://drive.google.com/file/d/1chCtPrqL-mO_q434O5J8-Ts5drinyrce/view?usp=drive_link"><img src="https://m.media-amazon.com/images/I/8175K-Z1LaL._AC_UF1000,1000_QL80_.jpg" alt="Movie 6"></a>
-        <a href="https://drive.google.com/file/d/1Gw3Gwe4v15c1TsoMKCTJsz0QAgbzN5mY/view?usp=drive_link"><img src="https://m.media-amazon.com/images/M/MV5BMWFkNjBkYjQtYjQyNC00NDIxLTg3ZDQtNDU3YzRiYWI5NjQyXkEyXkFqcGc@._V1_.jpg" alt="Movie 7"></a>
-       <a href="https://drive.google.com/file/d/1xeIRcA6IStXpNoTtqXDM2OQRpCptlCsL/view?usp=drive_link"><img src="https://m.media-amazon.com/images/I/81nWT0SVbIL._AC_UF894,1000_QL80_.jpg" alt="Movie 8"></a>
-        <a href="https://drive.google.com/file/d/19tNH9lBZAw2cd8skWlxWhLBCeZjVT9J0/view?usp=drive_link"><img src="https://assets.mycast.io/posters/the-nun-2-2023-fan-casting-poster-275992-large.jpg?1672801791" alt="Movie 9"></a>
-        <a href="https://drive.google.com/file/d/1-UaJdRV00wSltdPukJGtQDRM_IWBQ9EG/view?usp=drive_link"><img src="https://upload.wikimedia.org/wikipedia/en/b/bc/The_Conjuring_%E2%80%93_Last_Rites.jpg" alt="Movie 10"></a>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="tel:01792108310">Contact</a>
     </div>
+  </nav>
 
-    
-    <audio controls autoplay loop > 
-        <source src="mixkit-wolves-at-scary-forest-2485.wav" type="audio/wav">
-    </audio>
+  <h2>THE WHOLE CONJURING UNIVERSE<br>Feel the Darkness...</h2>
 
-    
+  <div class="gallery">
+    <a href="https://drive.google.com/file/d/1ityUm5DF6dstdIeNAI5d0KsKPV6oEwSW/view">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_.jpg" alt="The Conjuring">
+    </a>
+    <a href="https://drive.google.com/file/d/12paeBGyZW635xIYce0R7nMaFPxqkW5--/view?usp=drive_link">
+      <img src="https://m.media-amazon.com/images/M/MV5BNjkyMDU5ZWQtZDhkOC00ZWFjLWIyM2MtZWFhMDUzNjdlNzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Annabelle Comes Home">
+    </a>
+    <a href="https://drive.google.com/file/d/1EtvIOLh9g4OEDcqr6E-lTaFNpPtaEZ__/view?usp=drive_link">
+      <img src="https://m.media-amazon.com/images/M/MV5BOTRkMDlmZWEtMzQyYy00YzgyLTgwM2QtNzgxYmIwNGVlYmJlXkEyXkFqcGc@._V1_.jpg" alt="The Curse of La Llorona">
+    </a>
+    <a href="https://drive.google.com/file/d/1b_c1IUJvhe5peBftGcLl2IC3QiixfNO3/view?usp=drive_link">
+      <img src="https://play-lh.googleusercontent.com/BAxyWqRWBzJT7kW6kR7qgw2946MzJbOKm78_71qyEi_4_VIHvkU28uiDOz8U3lvuexiF" alt="Annabelle">
+    </a>
+    <a href="https://drive.google.com/file/d/1ViBBltUJFVIRyVsJcPOEkDalxDNqm1uU/view?usp=drive_link">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjM3NzQ5NDcxOF5BMl5BanBnXkFtZTgwNzM4MTQ5NTM@._V1_.jpg" alt="The Conjuring 2">
+    </a>
+    <a href="https://drive.google.com/file/d/1chCtPrqL-mO_q434O5J8-Ts5drinyrce/view?usp=drive_link">
+      <img src="https://m.media-amazon.com/images/I/8175K-Z1LaL._AC_UF1000,1000_QL80_.jpg" alt="Annabelle Creation">
+    </a>
+    <a href="https://drive.google.com/file/d/1Gw3Gwe4v15c1TsoMKCTJsz0QAgbzN5mY/view?usp=drive_link">
+      <img src="https://m.media-amazon.com/images/M/MV5BMWFkNjBkYjQtYjQyNC00NDIxLTg3ZDQtNDU3YzRiYWI5NjQyXkEyXkFqcGc@._V1_.jpg" alt="The Nun">
+    </a>
+    <a href="https://drive.google.com/file/d/1xeIRcA6IStXpNoTtqXDM2OQRpCptlCsL/view?usp=drive_link">
+      <img src="https://m.media-amazon.com/images/I/81nWT0SVbIL._AC_UF894,1000_QL80_.jpg" alt="The Conjuring 3">
+    </a>
+    <a href="https://drive.google.com/file/d/19tNH9lBZAw2cd8skWlxWhLBCeZjVT9J0/view?usp=drive_link">
+      <img src="https://assets.mycast.io/posters/the-nun-2-2023-fan-casting-poster-275992-large.jpg?1672801791" alt="The Nun II">
+    </a>
+    <a href="https://drive.google.com/file/d/1-UaJdRV00wSltdPukJGtQDRM_IWBQ9EG/view?usp=drive_link">
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/The_Conjuring_%E2%80%93_Last_Rites.jpg" alt="The Conjuring: Last Rites">
+    </a>
+  </div>
+
+  <audio controls autoplay loop>
+    <source src="mixkit-wolves-at-scary-forest-2485.wav" type="audio/wav">
+  </audio>
+
+  <footer>
+    © 2025 EINBRAINTON | The Conjuring Universe Fan Gallery
+  </footer>
 </body>
-
 </html>
